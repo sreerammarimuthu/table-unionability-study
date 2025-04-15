@@ -1,44 +1,49 @@
 Our Final Feature Set - Used for ML Analysis (All & Aggregated Subsets)   
 All the features are associated with the responses to the Table Unionability Questions from the Main Section of the Survey.   
 
+
 I. CLICK FEATURES:   
-    1. FirstClick - Time (in seconds), First time the participant clicked on the screen for that particular question;   
-    2. LastClick - Time (in seconds), Last time the participant clicked on the screen for that particular question;   
+    1. FirstClick - Time (in seconds), 0 to 1 (here after global scaling), First time the participant clicked on the screen for that particular question;   
+    2. LastClick - Time (in seconds), 0 to 1 (here after global scaling), Last time the participant clicked on the screen for that particular question;   
     3. IsSingleClick - 0 or 1, based on whether the participant had a "FirstClick==LastClick";   
-    4. ClickCount - Number of times the participant clicked on the screen for that particular question;   
+    4. ClickCount - 1 to 46, 0 to 1 (here after global scaling), Number of times the participant clicked on the screen for that particular question;   
     5. LC-FC - Time (in seconds), Difference between LastClick and FirstClick;   
+
     
 II. USER FEATURES:   
-    6. Browser - 0.5 to 5, Mapping the String values to Numerical ones: 'Safari iPhone': 0.5, 'Safari': 1, 'Chrome iPhone': 1.5, 'Chrome': 2, 'Firefox': 3, 'Opera': 4, 'Edge': 5;   
-    7. OS - 1 to 5, Mapping the String values to Numerical ones: 'iPhone': 1, 'Linux x86_64': 2, 'Macintosh': 3, 'Ubuntu': 4, 'Windows NT 10.0': 5;   
-    8. Age - 1 or 2, Mapping the String values to Numerical ones:(based on participant's age group): '18-24': 1, '25-34': 2;   
-    9. Education - 1 to 3, Mapping the String values to Numerical ones:(based on participant's completed level of education): 'High school diploma or equivalent': 1, "Bachelor's degree": 2, "Master's degree": 3;   
-    10. EngProf - 1 to 5, Mapping the String values to Numerical ones:(based on participant's English proficiency level): 'Basic': 1, 'Intermediate': 2, 'Proficient': 3, 'Fluent': 4, 'Native speaker': 5;   
-    11. Major - 1 to 5, Mapping the String values to Numerical ones:(based on participant's Major): 'Biotechnology': 1, 'Robotics': 2, 'AI': 3, 'Computer Science': 4, 'Data Science': 5;   
-    12. ResolutionLen - 1 to 3, Mapping the lengths of Resolution: '7': 1, '8': 2, '9': 3;   
+    6. Browser - 0.5 to 5, mapping the String values to Numerical ones: 'Safari iPhone': 0.5, 'Safari': 1, 'Chrome iPhone': 1.5, 'Chrome': 2, 'Firefox': 3, 'Opera': 4, 'Edge': 5;   
+    7. OS - 1 to 5, mapping the String values to Numerical ones: 'iPhone': 1, 'Linux x86_64': 2, 'Macintosh': 3, 'Ubuntu': 4, 'Windows NT 10.0': 5;   
+    8. Age - 1 or 2, mapping the String values to Numerical ones:(based on participant's age group): '18-24': 1, '25-34': 2;   
+    9. Education - 1 to 3, mapping the String values to Numerical ones:(based on participant's completed level of education): 'High school diploma or equivalent': 1, "Bachelor's degree": 2, "Master's degree": 3;   
+    10. EngProf - 1 to 5, mapping the String values to Numerical ones:(based on participant's English proficiency level): 'Basic': 1, 'Intermediate': 2, 'Proficient': 3, 'Fluent': 4, 'Native speaker': 5;   
+    11. Major - 1 to 5, mapping the String values to Numerical ones:(based on participant's Major): 'Biotechnology': 1, 'Robotics': 2, 'AI': 3, 'Computer Science': 4, 'Data Science': 5;   
+    12. ResolutionLen - 1 to 3, mapping the lengths of Resolution: '7': 1, '8': 2, '9': 3;   
+
     
 III. HUMAN LABEL FEATURES:   
-    13. IsExp - 0 or 1, based on whether the participant gave an explanation with their answer or not   
-    14. ExplanationsLen - String length of the explanations if given or else 0   
-    15. ExplanationsLen_scaled -  Scaled version of the ExplanationLen   
-    16. SurveyAnswer - 0 or 1, answers given by participants for each question ('No' or 'Yes')
+    13. IsExp - 0 or 1, based on whether the participant gave an explanation with their answer or not    
+    14. ExplanationsLen - 0 to 1358, String length of the explanations if given or else 0    
+    15. ExplanationsLen_scaled - 0 to 1, globally scaled version of the ExplanationLen    
+    16. SurveyAnswer - 0 or 1, answers given by participants for each question ('No' or 'Yes')    
 
-IV. QUANTIFIED (HUMAN LABELS) FEATURES:   
-    17. Majority - 0, 0.5 or 1, based on the majority of the SurveyAnswer (Quantified Consensus) for each quesion in particular (for eg., imagine we have 8 participants answering a question and if most of them (5+) said 'Yes', then Majority=1, similarly for 'No' (Majority=0), if half of them (i.e., 4 said yes and 4 said no, then Majority=0.5)   
-    18. NoCY - 0 to 4, number of times the participant correctly answered 'Yes'    
-    19. NoCN - 0 to 4, number of times the participant correctly answered 'No'   
-    20. Diff_CAns - Difference between "NoCY" and "NoCN"   
     
-V. DECISION TIME FEATURES:
-    21. DecisionTime - 
-    22. OverallSurveyDT - 
-    23. MIDT - 
-    24. ISDT - 
-    25. MEDT - 
-    26. ESDT - 
-    27.DecisionTimeFract - 
+IV. QUANTIFIED (HUMAN LABELS) FEATURES:    
+    17. Majority - 0, 0.5 or 1, based on the majority of the SurveyAnswer (Quantified Consensus) for each question in particular (for eg., imagine we have 8 participants answering a question and if most of them (5+) said 'Yes', then Majority=1, similarly for 'No' (Majority=0), if half of them (i.e., 4 said yes and 4 said no, then Majority=0.5)    
+    18. NoCY - 0 to 4, number of times the participant correctly answered 'Yes'     
+    19. NoCN - 0 to 4, number of times the participant correctly answered 'No'    
+    20. Diff_CAns - (-3 to 3), difference between "NoCY" and "NoCN"   
 
+    
+V. DECISION TIME FEATURES:     
+    21. DecisionTime - Time (in seconds), 0 to 1 (here after global scaling), amount of time spent by each participant to answer a particular question    
+    22. OverallSurveyDT - Time (in seconds), 0 to 1 (here after global scaling), amount of time spent by each participant for the entire survey (sum of the time taken to answer all 8 questions, introduction and the questionnaire)     
+    23. MIDT - Mean of Internal DecisionTime (in seconds), among the other responses of a particular "User"
+    24. ISDT - DecisionTime (in seconds), 0 to 1 (here after internal scaling), i.e., considering only the responses of a particular "User" for each "User"    
+    25. MEDT - Mean of External DecisionTime (in seconds), among the responses of different "Users" answering a particular "Question"    
+    26. ESDT - DecisionTime (in seconds), 0 to 1 (here after external scaling), i.e., considering only the responses of a particular "Question", among different "Users" answering the same question     
+    27. DecisionTimeFract - 0 to 1 (here after global scaling), ratio of "DecisionTime" with respect to "OverallSurveyDT"     
 
+    
 VI. CONFIDENCE LEVEL FEATURES:
     28. ConfidenceLevel - 
     29. MICL - 

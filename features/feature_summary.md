@@ -1,7 +1,7 @@
 Our Final Feature Set - Used for ML Analysis (All & Aggregated Subsets)   
 All the features are associated with the responses to the Table Unionability Questions from the Main Section of the Survey.   
 
-I. CLICK FEATURES:   
+I. *CLICK FEATURES:*   
     1. FirstClick - Time (in seconds), First time the participant clicked on the screen for that particular question;   
     2. LastClick - Time (in seconds), Last time the participant clicked on the screen for that particular question;   
     3. IsSingleClick - 0 or 1, based on whether the participant had a "FirstClick==LastClick";   

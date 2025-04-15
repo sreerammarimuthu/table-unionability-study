@@ -1,7 +1,7 @@
 Our Final Feature Set - Used for ML Analysis (All & Aggregated Subsets)   
 All the features are associated with the responses to the Table Unionability Questions from the Main Section of the Survey.   
 
-I. *CLICK FEATURES:*   
+I. CLICK FEATURES:   
     1. FirstClick - Time (in seconds), First time the participant clicked on the screen for that particular question;   
     2. LastClick - Time (in seconds), Last time the participant clicked on the screen for that particular question;   
     3. IsSingleClick - 0 or 1, based on whether the participant had a "FirstClick==LastClick";   
@@ -18,13 +18,13 @@ II. USER FEATURES:
     12. ResolutionLen - 1 to 3, Mapping the lengths of Resolution: '7': 1, '8': 2, '9': 3;   
     
 III. HUMAN LABEL FEATURES:   
-    13. IsExp - 
-    14. ExplanationsLen - 
-    15. ExplanationsLen_scaled - 
-    16. SurveyAnswer - 
+    13. IsExp - 0 or 1, based on whether the participant gave an explanation with their answer or not   
+    14. ExplanationsLen - String length of the explanations if given or else 0   
+    15. ExplanationsLen_scaled -  Scaled version of the ExplanationLen   
+    16. SurveyAnswer - 0 or 1, answers given by participants for each question (no or yes)
 
-IV. QUANTIFIED (HUMAN LABELS) FEATURES:
-    17. Majority - 
+IV. QUANTIFIED (HUMAN LABELS) FEATURES:   
+    17. Majority -    
     18. NoCY - 
     19. NoCN - 
     20. Diff_CAns - 

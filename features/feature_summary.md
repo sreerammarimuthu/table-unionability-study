@@ -21,14 +21,14 @@ III. HUMAN LABEL FEATURES:
     13. IsExp - 0 or 1, based on whether the participant gave an explanation with their answer or not   
     14. ExplanationsLen - String length of the explanations if given or else 0   
     15. ExplanationsLen_scaled -  Scaled version of the ExplanationLen   
-    16. SurveyAnswer - 0 or 1, answers given by participants for each question (no or yes)
+    16. SurveyAnswer - 0 or 1, answers given by participants for each question ('No' or 'Yes')
 
 IV. QUANTIFIED (HUMAN LABELS) FEATURES:   
-    17. Majority -    
-    18. NoCY - 
-    19. NoCN - 
-    20. Diff_CAns - 
-
+    17. Majority - 0, 0.5 or 1, based on the majority of the SurveyAnswer (Quantified Consensus) for each quesion in particular (for eg., imagine we have 8 participants answering a question and if most of them (5+) said 'Yes', then Majority=1, similarly for 'No' (Majority=0), if half of them (i.e., 4 said yes and 4 said no, then Majority=0.5)   
+    18. NoCY - 0 to 4, number of times the participant correctly answered 'Yes'    
+    19. NoCN - 0 to 4, number of times the participant correctly answered 'No'   
+    20. Diff_CAns - Difference between "NoCY" and "NoCN"   
+    
 V. DECISION TIME FEATURES:
     21. DecisionTime - 
     22. OverallSurveyDT - 

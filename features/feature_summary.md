@@ -21,36 +21,36 @@ II. USER FEATURES:
 
     
 III. HUMAN LABEL FEATURES:   
-    13. IsExp - 0 or 1, based on whether the participant gave an explanation with their answer or not    
-    14. ExplanationsLen - 0 to 1358, String length of the explanations if given or else 0    
-    15. ExplanationsLen_scaled - 0 to 1, globally scaled version of the ExplanationLen    
-    16. SurveyAnswer - 0 or 1, answers given by participants for each question ('No' or 'Yes')    
+    13. IsExp - 0 or 1, based on whether the participant gave an explanation with their answer or not;    
+    14. ExplanationsLen - 0 to 1358, String length of the explanations if given or else 0;    
+    15. ExplanationsLen_scaled - 0 to 1, globally scaled version of the ExplanationLen;    
+    16. SurveyAnswer - 0 or 1, answers given by participants for each question ('No' or 'Yes');    
 
     
 IV. QUANTIFIED (HUMAN LABELS) FEATURES:    
-    17. Majority - 0, 0.5 or 1, based on the majority of the SurveyAnswer (Quantified Consensus) for each question in particular (for eg., imagine we have 8 participants answering a question and if most of them (5+) said 'Yes', then Majority=1, similarly for 'No' (Majority=0), if half of them (i.e., 4 said yes and 4 said no, then Majority=0.5)    
-    18. NoCY - 0 to 4, number of times the participant correctly answered 'Yes'     
-    19. NoCN - 0 to 4, number of times the participant correctly answered 'No'    
-    20. Diff_CAns - (-3 to 3), difference between "NoCY" and "NoCN"   
+    17. Majority - 0, 0.5 or 1, based on the majority of the SurveyAnswer (Quantified Consensus) for each question in particular (for eg., imagine we have 8 participants answering a question and if most of them (5+) said 'Yes', then Majority=1, similarly for 'No' (Majority=0), if half of them (i.e., 4 said yes and 4 said no, then Majority=0.5);    
+    18. NoCY - 0 to 4, number of times the participant correctly answered 'Yes';     
+    19. NoCN - 0 to 4, number of times the participant correctly answered 'No';    
+    20. Diff_CAns - (-3 to 3), difference between "NoCY" and "NoCN";   
 
     
 V. DECISION TIME FEATURES:     
-    21. DecisionTime - Time (in seconds), 0 to 1 (here after global scaling), amount of time spent by each participant to answer a particular question    
-    22. OverallSurveyDT - Time (in seconds), 0 to 1 (here after global scaling), amount of time spent by each participant for the entire survey (sum of the time taken to answer all 8 questions, introduction and the questionnaire)     
-    23. MIDT - Mean of Internal DecisionTime (in seconds), among the other responses of a particular "User"
-    24. ISDT - DecisionTime (in seconds), 0 to 1 (here after internal scaling), i.e., considering only the responses of a particular "User" for each "User"    
-    25. MEDT - Mean of External DecisionTime (in seconds), among the responses of different "Users" answering a particular "Question"    
-    26. ESDT - DecisionTime (in seconds), 0 to 1 (here after external scaling), i.e., considering only the responses of a particular "Question", among different "Users" answering the same question     
-    27. DecisionTimeFract - 0 to 1 (here after global scaling), ratio of "DecisionTime" with respect to "OverallSurveyDT"     
+    21. DecisionTime - Time (in seconds), 0 to 1 (here after global scaling), amount of time spent by each participant to answer a particular question;    
+    22. OverallSurveyDT - Time (in seconds), 0 to 1 (here after global scaling), amount of time spent by each participant for the entire survey (sum of the time taken to answer all 8 questions, introduction and the questionnaire);     
+    23. MIDT - Mean of Internal DecisionTime (in seconds), among the other responses of a particular "User";
+    24. ISDT - DecisionTime (in seconds), 0 to 1 (here after internal scaling), i.e., considering only the responses of a particular "User" for each "User";    
+    25. MEDT - Mean of External DecisionTime (in seconds), among the responses of different "Users" answering a particular "Question";    
+    26. ESDT - DecisionTime (in seconds), 0 to 1 (here after external scaling), i.e., considering only the responses of a particular "Question", among different "Users" answering the same question;     
+    27. DecisionTimeFract - 0 to 1 (here after global scaling), ratio of "DecisionTime" with respect to "OverallSurveyDT";     
 
     
-VI. CONFIDENCE LEVEL FEATURES:
-    28. ConfidenceLevel - 
-    29. MICL - 
-    30. ISCL - 
-    31. MECL - 
-    32. ESCL - 
-    33. ConfidenceLevel_Dec - 
-
-TARGET FEATURE:
-    34. ActualAnswer - Labels considered to be correct as per the UGEN benchmarks;
+VI. CONFIDENCE LEVEL FEATURES:     
+    28. ConfidenceLevel - 0 to 100 from the Slider, 0 to 1 (here after global scaling), actual reported confidence level by participants for each question;    
+    29. MICL - 0 to 100, Mean of Internal ConfidenceLevel (in seconds), among the other responses of a particular "User";     
+    30. ISCL - ConfidenceLevel, 0 to 1 (here after internal scaling), i.e., considering only the responses of a particular "User" for each "User";    
+    31. MECL - 0 to 100, Mean of External ConfidenceLevel (in seconds), among the responses of different "Users" answering a particular "Question";     
+    32. ESCL - ConfidenceLevel, 0 to 1 (here after external scaling), i.e., considering only the responses of a particular "Question", among different "Users" answering the same question;      
+    33. ConfidenceLevel_Dec - 0 to 1, actual reported ConfidenceLevel in percentage (divided by 100);     
+        
+TARGET FEATURE:      
+    34. ActualAnswer - Labels considered to be correct as per the UGEN benchmarks;      

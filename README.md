@@ -14,4 +14,4 @@ Contents:
 
 We hope this work supports future studies at the intersection of human-in-the-loop AI, data discovery, and LLM interpretability. 
 
-### Note: This paper presents a summary of our preliminary results from analysis, and we aim to expand this research further in future work.
+### Note: This paper and repo presents a summary of our preliminary results from analysis, and we aim to expand this research further in future work.

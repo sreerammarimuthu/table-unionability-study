@@ -2,8 +2,8 @@
 
 Welcome to the companion repository for our research paper titled:
 
-“Humans, Machine Learning, and Language Models in Union: A Cognitive Study on Table Unionability”
-Accepted at ACM SIGMOD HILDA 2025
+“Humans, Machine Learning, and Language Models in Union: A Cognitive Study on Table Unionability” 
+#### Status Update: Accepted at ACM SIGMOD HILDA 2025
 
 This repository provides open access to selected data samples, feature annotations, and supporting materials used in our research study. The research explores how human cognition, machine learning models, and large language models (LLMs) interact when determining the unionability of relational tables, highlighting both interpretability and performance trade-offs in Human-in-the-loop systems.
 

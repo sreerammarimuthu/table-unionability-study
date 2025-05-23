@@ -1,4 +1,4 @@
-# Our Final Feature Set - Used for ML Analysis (All & Aggregated Subsets)   
+# Our Final Feature Set - Used for ML Analysis (Aggregated Subsets)   
 
 All the features are associated with the responses to the Table Unionability Questions from the Main Section of the Survey.   
 

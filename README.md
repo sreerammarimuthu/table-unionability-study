@@ -9,7 +9,7 @@ This repository provides open access to selected data samples, feature annotatio
 ## Contents
 - Data Samples used in the study
 - Feature descriptions & engineering logic
-- Visual and tabular results included in the paper
+- Visual & tabular results included in the paper
 
 ## Note
 This paper and repo presents a summary of our preliminary results from analysis, and we aim to expand this research further in future work.

@@ -8,7 +8,7 @@ This repository provides open access to selected data samples, feature annotatio
 
 ## Contents
 `data`   
-- `sample_data_v1q1` - A sample of annotated response data from a selected question from the research study, provided for transparency.   
+- `sample_data_v1q1.csv` - A sample of annotated response data from a selected question from the research study, provided for transparency.   
 
 `features`   
 - `feature_summary.md` - Detailed descriptions of features, feature-engineering logic, definitions and groupings of each Aggregated Feature subsets used in the study.    

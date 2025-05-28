@@ -17,5 +17,4 @@ This repository provides open access to selected data samples, feature annotatio
 - `tables/` - Tabular outputs referenced in the paper, including metrics, comparisons, and model performance breakdowns.     
 - `figures/` - Visualizations referenced in the paper, of key findings from the study, including accuracy & reported confidence trends with time, and the aggregated feature subset performances.   
 
-## Note
-This paper and repo presents a summary of our preliminary results from analysis, and we aim to expand this research further in future work.
+> Note: This paper and repo presents a summary of our preliminary results from analysis, and we aim to expand this research further in future work.

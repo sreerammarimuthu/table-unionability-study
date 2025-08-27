@@ -1,7 +1,8 @@
 # Table-Unionability-Study
 
 Welcome to the companion repository for our research paper titled: “Humans, Machine Learning, and Language Models in Union: A Cognitive Study on Table Unionability” 
-#### Status Update: Published at ACM SIGMOD HILDA 2025
+#### Status Update: Published at ACM SIGMOD HILDA '25, June 22–27, 2025, Berlin, Germany
+
 
 - `ACM Publication` - https://dl.acm.org/doi/10.1145/3736733.3736740    
 - `ACM Kudos Article` - https://www.growkudos.com/publications/10.1145%25252F3736733.3736740/reader    

@@ -4,7 +4,7 @@ Welcome to the companion repository for our research paper titled: “Humans, Ma
 #### Status Update: Published at ACM SIGMOD HILDA 2025
 
 ACM Publication - https://dl.acm.org/doi/10.1145/3736733.3736740    
-ACM Kudos Article (Plain‑English summary) - https://www.growkudos.com/publications/10.1145%25252F3736733.3736740/reader    
+ACM Kudos Article - https://www.growkudos.com/publications/10.1145%25252F3736733.3736740/reader    
 Preprint - https://arxiv.org/abs/2506.12990    
 
 ## Description
